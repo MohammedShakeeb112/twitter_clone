@@ -1,0 +1,14 @@
+extends layouts/login-layouts.pug
+block content 
+    div.loginContainer 
+        h1 Welcome to Login 
+        form(method="post")
+            p.errMessage #{errMessage}
+            //- input(type="text" name="usernameLog" placeholder="Enter Username or Email" value=usernameLog required="")
+            //- input(type="password" name="passwordLog" placeholder="Enter Password" required="")
+
+            //- prepopulating the data
+            input(type="text" name="usernameLog" placeholder="Enter Username or Email" value='mohammedshakeeb' required="")
+            input(type="password" name="passwordLog" placeholder="Enter Password" value='password' required="")
+            input(type="submit", value="Submit") 
+        a(href="/register") Need account? Create here.
